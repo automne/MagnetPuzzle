@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    UIImageView *ii;
+    UIImageView *slot;
+}
 @end
