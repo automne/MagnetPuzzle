@@ -30,16 +30,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    slotImage=[UIImage imageNamed:@"slot.png"];
+    stateReady=[UIImage imageNamed:@"ready.png"];
+    stateDone=[UIImage imageNamed:@"done.png"];
+    
     CGRect r=CGRectMake(arc4random()%300, arc4random()%400, 50, 50);
-    UIImage *im=[UIImage imageNamed:@"slot.png"];
+    
     slot=[[UIImageView alloc] initWithFrame:r];
-    slot.image=im;
+    slot.image=slotImage;
     slot.center=CGPointMake(160, 240);
     [self.view addSubview:slot];
     
-    im=[UIImage imageNamed:@"code.png"];
     ii=[[UIImageView alloc] initWithFrame:r];
-    ii.image=im; 
+    ii.image=stateReady; 
     [self.view addSubview:ii];
     
 }
@@ -55,7 +58,6 @@
     for (UITouch *touch in touches) {
 		[self dispatchFirstTouchAtPoint:[touch locationInView:self.view] forEvent:nil];
 	}
-    
 }
 
 -(void)dispatchTouchEvent:(UIView *)theView toPosition:(CGPoint)position
@@ -68,6 +70,7 @@
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    ii.image=stateReady;
     for (UITouch *touch in touches) {
 		[self dispatchTouchEvent:[touch view] toPosition:[touch locationInView:self.view]];
 	}
@@ -84,7 +87,10 @@
     CGFloat yDis=(slot.center.y-ii.center.y);
     CGFloat distance=sqrt((xDis * xDis) + (yDis * yDis));
     
-    if(distance<25 && distance>0) ii.center=slot.center;
+    if(distance<25 && distance>0) {
+        ii.center=slot.center;
+        ii.image=stateDone;
+    }
 }
 
 -(void)animateView:(UIView *)theView toPosition:(CGPoint)thePosition

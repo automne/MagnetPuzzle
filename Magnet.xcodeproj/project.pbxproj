@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		597FD614149100A800D17F10 /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = 597FD613149100A800D17F10 /* done.png */; };
 		599470BA1490E9AB00075501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599470B91490E9AB00075501 /* UIKit.framework */; };
 		599470BC1490E9AB00075501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599470BB1490E9AB00075501 /* Foundation.framework */; };
 		599470BE1490E9AB00075501 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599470BD1490E9AB00075501 /* CoreGraphics.framework */; };
@@ -20,7 +21,7 @@
 		599470DA1490E9AB00075501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599470BB1490E9AB00075501 /* Foundation.framework */; };
 		599470E21490E9AB00075501 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 599470E01490E9AB00075501 /* InfoPlist.strings */; };
 		599470E51490E9AB00075501 /* mferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 599470E41490E9AB00075501 /* mferTests.m */; };
-		59B6F88D1490EA1E001ADE54 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B6F88C1490EA1E001ADE54 /* code.png */; };
+		59B6F88D1490EA1E001ADE54 /* ready.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B6F88C1490EA1E001ADE54 /* ready.png */; };
 		59B6F8941490F3BF001ADE54 /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B6F8931490F3BF001ADE54 /* slot.png */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		597FD613149100A800D17F10 /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done.png; sourceTree = "<group>"; };
 		599470B51490E9AB00075501 /* Magnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599470B91490E9AB00075501 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		599470BB1490E9AB00075501 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,7 +56,7 @@
 		599470E11490E9AB00075501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		599470E31490E9AB00075501 /* mferTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mferTests.h; sourceTree = "<group>"; };
 		599470E41490E9AB00075501 /* mferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mferTests.m; sourceTree = "<group>"; };
-		59B6F88C1490EA1E001ADE54 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		59B6F88C1490EA1E001ADE54 /* ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ready.png; sourceTree = "<group>"; };
 		59B6F8931490F3BF001ADE54 /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,8 +162,9 @@
 		59B6F8951490FC7C001ADE54 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				597FD613149100A800D17F10 /* done.png */,
 				59B6F8931490F3BF001ADE54 /* slot.png */,
-				59B6F88C1490EA1E001ADE54 /* code.png */,
+				59B6F88C1490EA1E001ADE54 /* ready.png */,
 			);
 			name = Images;
 			path = ..;
@@ -239,8 +242,9 @@
 			files = (
 				599470C41490E9AB00075501 /* InfoPlist.strings in Resources */,
 				599470D01490E9AB00075501 /* ViewController.xib in Resources */,
-				59B6F88D1490EA1E001ADE54 /* code.png in Resources */,
+				59B6F88D1490EA1E001ADE54 /* ready.png in Resources */,
 				59B6F8941490F3BF001ADE54 /* slot.png in Resources */,
+				597FD614149100A800D17F10 /* done.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

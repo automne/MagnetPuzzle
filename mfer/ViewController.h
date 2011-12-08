@@ -12,5 +12,9 @@
 {
     UIImageView *ii;
     UIImageView *slot;
+    
+    UIImage *slotImage;
+    UIImage *stateReady;
+    UIImage *stateDone;
 }
 @end
